@@ -1,17 +1,23 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
+body{
+    background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
 
-i{
-    color: #eb964c;
-    margin: 2px;
-    font-size: 12px;
+.container{
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .rounded-xlg{
     border-radius: .5rem;
-}
-
-.Dark-Grayish-Magenta{
-    color: hsl(303, 10%, 53%);    
 }
 
 .Soft-Pink{ 
@@ -19,7 +25,8 @@ i{
 }
 
 .bg-Light-Grayish-Magenta{
-    background-color: hsl(300, 24%, 96%); 
+    background-color: hsl(300, 24%, 95%);
+    margin-bottom: 15px;
 }
 
 .bg-Very-Dark-Magenta{
@@ -29,44 +36,120 @@ i{
 h1{
     font-family: 'Spartan';
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 30px;
     color: hsl(300, 43%, 22%);
+    text-align: center;
 }
 
 h2{
     font-family: 'Spartan';
     font-weight: 500;
-    font-size: 13px;
-    line-height: 170%;
+    font-size: 15px;
+    line-height: 25px;
+    color: hsl(303, 10%, 70%); 
+    text-align: center;
+    margin-top: 15px;
 }
 
 h3{
     font-family: 'Spartan';
     font-weight: 700;
-    font-size: 11px;
+    font-size: 13px;
     color: hsl(300, 43%, 22%);
-    padding-left: 8%;
-    margin-top: 4px;
+    margin-top: 4px; 
+    text-align: center;
 }
 
 h4{
     font-family: 'Spartan';
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 160%;
 }
 
 p{
     font-family: 'Spartan';
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 180%;
 }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
+
+i{
+    color: #eb964c;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-right: 1px;
+    
 }
 
+.starts .text{
+    text-align: center;
+}
+
+.Containerstars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.starts{
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (min-width: 996px){
+
+body{
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+.Containerstars{
+    margin-top: 17px;
+}
+
+.starts{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+h3{
+    padding-top: 17px;
+    margin-left: 20px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: start;
+    line-height: 140%;
+    padding-right: 15px;
+}
+
+h2{
+    text-align: start;
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.start1{
+    margin-right: 70px;
+}
+
+.start3{
+    margin-left: 100px;
+}
+}
